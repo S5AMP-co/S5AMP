@@ -1,35 +1,42 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
-<head>
-    <title>S5AMP; In hurry!</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <header>
-        <!-- Navigation and header content -->
-    </header>
-    <main>
-        <section id="banner">
-            <!-- Banner content (e.g., images, text) -->
-        </section>
-        <section id="about">
-            <!-- About section content -->
-        </section>
-        <section id="products">
-            <!-- Products or services section content -->
-        </section>
-        <section id="contact">
-            <!-- Contact information and form section content -->
-        </section>
-    </main>
-    <footer>
-        <!-- Footer content (e.g., links, copyright info) -->
-    </footer>
+    <head>
+        <title>
+            S5AMP; In Hurry!
+        </title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            $(document).ready(function() {
+  
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 1) {
+      $('.arrow').addClass('fade');
+    } else{
+      $('.arrow').removeClass('fade');
+    }
+  })
+});
 
-    <script>
-        // JavaScript code for dynamic functionality
-        // You can add interactive features, animations, etc. here
-    </script>
-</body>
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            
+
+<div class="arrow animated bounce"></div>
+
+<footer>s5amp.vercel.app/</footer>
+
+
+          </div>
+          <div class="content">
+            
+          </div>
+          
+    </body>
 </html>

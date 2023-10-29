@@ -27,6 +27,7 @@ body {
   background-attachment: fixed; 
   background-size: cover;
   height: 400px;
+    max-width: 100%;
   }
 /* Page Content */
 .content {padding:20px;}

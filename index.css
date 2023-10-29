@@ -102,6 +102,12 @@ footer {margin-top:110vh; text-align:center; font-size:12px; font-family:arial;}
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
+ /* CSS for responsive image */
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+        }
+}
 
 .fade {
   opacity:0;

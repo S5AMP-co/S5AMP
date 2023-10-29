@@ -4,6 +4,15 @@ body {
     margin: 0;
     padding: 0;
 }
+.column {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
 
 /* Header/Logo Title */
 .header {

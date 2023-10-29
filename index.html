@@ -45,8 +45,35 @@
 
           </div>
           <div class="content">
-            
+            <div>
+        <!-- HTML for the responsive image -->
+        <img class="responsive-image" id="myImage" src="Designer.png" alt="Physics BAnner">
+    </div>
           </div>
-          
+          <script>
+                   // JavaScript for handling the image
+        window.onload = function() {
+            // Get the image element
+            var image = document.getElementById("myImage");
+
+            // Update the image size based on the screen width
+            function updateImageSize() {
+                var screenWidth = window.innerWidth;
+
+                if (screenWidth < 768) {
+                    image.style.width = "100%"; // Resize the image to fit the screen width
+                } else {
+                    // Set a maximum width for wider screens
+                    var maxWidth = 600; // Adjust this value as needed
+                    image.style.width = "100%";
+                    image.style.maxWidth = maxWidth + "px";
+                }
+            }
+
+            // Call the updateImageSize function on page load and when the window is resized
+            updateImageSize();
+            window.addEventListener("resize", updateImageSize);
+        }
+          </script>
     </body>
 </html>
